@@ -23,15 +23,15 @@ class club:
         for player in self.members['players']:
             player.display()
             if salary==True:
-               print("         Salary:", player.getSalary())
+               print("         Salary: ${}".format(player.getSalary()))
             print("\n")
             
     def displayStaff(self, salary=None):
         for staff in self.members['staff']:
             staff.display()
             if salary==True:
-               print("         Salary:", staff.getSalary())
-            print("\n")
+               print("         Salary: ${}".format(staff.getSalary()))
+            print('\n')
     
     def displayMembers(self, salary=None):
         self.displayStaff(salary)
