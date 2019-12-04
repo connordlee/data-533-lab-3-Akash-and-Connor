@@ -80,10 +80,6 @@ class TestClub(unittest.TestCase):
         self.assertEqual(self.madrid.members['staff'][origLen+1].yearsWClub, 3)
         self.assertEqual(self.madrid.members['staff'][origLen+1].title, 'Accountant')
         
-        
-###########################################################################################
-#############              NOTE: This needs 1 more assertion              #################
-###########################################################################################
     def test_removePlayer(self):
         # Temporary variable to track original length of list
         origLen = len(self.madrid.members['players'])
@@ -106,10 +102,6 @@ class TestClub(unittest.TestCase):
             remainingPlayers.append(player.name)
         self.assertNotIn('Sergio Ramos', remainingPlayers)
 
-
-###########################################################################################
-#############              NOTE: This needs 1 more assertion              #################
-###########################################################################################
     def test_removeStaff(self):
         # Temporary variable to track original length of list
         origLen = len(self.madrid.members['staff'])
